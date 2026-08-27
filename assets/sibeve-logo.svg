@@ -1,0 +1,13 @@
+<svg width="248" height="90" viewBox="0 0 248 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="248" height="90" fill="white"/>
+  <path d="M8 37C12 31 18 29 25 30C31 31 35 35 39 41C33 42 28 41 23 38C19 35 15 34 8 37Z" fill="#148A43"/>
+  <path d="M0 33C5 29 11 28 16 29C22 31 27 35 31 41C25 42 20 41 15 39C10 37 6 34 0 33Z" fill="#148A43"/>
+  <rect x="58" y="8" width="28" height="26" fill="#148A43"/>
+  <rect x="91" y="8" width="28" height="26" fill="#44B649"/>
+  <rect x="124" y="8" width="28" height="26" fill="#9BC53D"/>
+  <rect x="157" y="8" width="28" height="26" fill="#F7B53C"/>
+  <rect x="190" y="8" width="28" height="26" fill="#F99B1D"/>
+  <text x="26" y="80" fill="#148A43" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="-3">SI</text>
+  <text x="85" y="80" fill="#6F7072" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="-3">BE</text>
+  <text x="164" y="80" fill="#F99B1D" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="58" font-weight="900" letter-spacing="-3">VE</text>
+</svg>

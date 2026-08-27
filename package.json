@@ -1,0 +1,9 @@
+{
+  "name": "sibeve-group-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sibeve Group static site with Vercel serverless email API (contact, quote, newsletter forms).",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
