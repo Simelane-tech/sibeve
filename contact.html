@@ -1965,25 +1965,31 @@ function initContactForm() {
     
     if (!valid) return;
     
-    // Submit the form via fetch to handle response and show custom success
-    fetch(form.action, {
+    // Submit the form via fetch as JSON
+    fetch('/api/contact', {
       method: 'POST',
-      body: new FormData(form),
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        phone: data.phone || '',
+        subject: data.subject || '',
+        message: data.message
+      })
+    }).then(async response => {
+      const result = await response.json().catch(() => ({}));
+      if (response.ok && result.success) {
         form.classList.add('hidden');
         success.style.display = 'block';
-        // Scroll to success message
         success.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
+        errorBox.textContent = result.error || 'Something went wrong. Please try again.';
         errorBox.classList.add('show');
       }
     }).catch(() => {
       errorBox.classList.add('show');
     });
+  
   });
   
   reset?.addEventListener('click', () => {
